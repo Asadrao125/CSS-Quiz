@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.login:
-                Toast.makeText(this, "Login", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 return true;
         }
         return false;
